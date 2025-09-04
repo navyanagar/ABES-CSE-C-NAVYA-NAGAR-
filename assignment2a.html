@@ -6,42 +6,55 @@
     <title>BUS SEAT BOOK</title>
     <style>
          * {
-       box-sizing: border-box; margin: 0; padding: 0; 
-      }
-    .topnav {
-      background-color: aqua;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 15px;
-    width: 100%; 
-    margin-bottom: 2%;
-    }
-     .main-image {
-      max-width: 200px;
-      width: 100%;
-      height: auto;
-      flex-shrink: 0;
-      margin-right: 40px; 
-      float: right;
-    }
+            box-sizing: border-box; margin: 0; padding: 0; 
+         }
+        .topnav {
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            padding: 15px;
+            width: 100%; 
+            margin-bottom: 2%;
+        }
+        .logo {
+            width: 50px;  
+            height: 50px;
+            border-radius: 50%; 
+            object-fit: cover; 
+        }
+        .title {
+            flex: 1; 
+            text-align: center; 
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .main-image {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            flex-shrink: 0;
+            margin-right: 40px; 
+            float: right;
+        }
     </style>
 </head>
 <body>
-    <div class="topnav">BUS SEAT BOOK</div>
+    <div class="topnav">
+        <img class="logo" src="bus.jpg" alt="Logo">
+        <div class="title">BUS SEAT BOOK</div>
+    </div>
     <center>WELCOME TO BUS BOOKING SYSTEM</center>
     <img class="main-image" src="bus.jpg" alt="Image">
-         <label>SELECT SEAT MODE</label><br>
-        <input type="checkbox" id="AC" name="" value="AC">
-        <label for="AC">AC</label><br><br>
-        <input type="checkbox" id="NON-AC" name="education" value="NON-AC">
-        <label for="NON-AC">NON-AC</label><br>
-    
+    <label>SELECT SEAT MODE</label><br>
+    <input type="checkbox" id="AC" name="" value="AC">
+    <label for="AC">AC</label><br>
+    <input type="checkbox" id="NON-AC" name="education" value="NON-AC">
+    <label for="NON-AC">NON-AC</label><br><br>
     <div>Select PAYMENT Mode</div>
-         <input type="radio" id="html" name="abc" value="html">
-         <label>UPI</label><br>
-           <input type="radio" id="html" name="abc" value="html">
-         <label>ATM</label><br>
+    <input type="radio" id="upi" name="abc" value="upi">
+    <label for="upi">UPI</label><br>
+    <input type="radio" id="atm" name="abc" value="atm">
+    <label for="atm">ATM</label><br>
 </body>
 </html>

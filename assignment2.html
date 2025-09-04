@@ -5,65 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         * {
-       box-sizing: border-box; margin: 0; padding: 0; 
-      }
-    .topnav {
-      background-color: aqua;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 15px;
-    width: 100%; 
-    margin-bottom: 2%;
-     
-    }
-     .main-image {
-      max-width: 200px;
-      width: 100%;
-      height: auto;
-      flex-shrink: 0;
-      margin-right: 40px; 
-      float: right;
-    }
+            box-sizing: border-box; margin: 0; padding: 0; 
+        }
+        .topnav {
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            padding: 15px;
+            width: 100%; 
+            margin-bottom: 2%;
+            position: relative;
+        }
+        .logo {
+            width: 50px;  
+            height: 50px;
+            border-radius: 50%; 
+            object-fit: cover;
+        }
+        .title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .main-image {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            flex-shrink: 0;
+            margin-right: 40px; 
+            float: right;
+        }
     </style>
     <title>Document</title>
 </head>
 <body>
-        <div class="topnav">BUS SEAT BOOK</div>
-        <center>WELCOME TO BUS BOOKING SYSTEM</center>
-        <br>
-        <div>USER DETAIL</div>
-        <img class="main-image" src="bus.jpg" alt="Image">
-        <br>
-        <label>User Name</label>
-        <input type ="text">
-        <br><br>
-        <label>User Password</label>
-        <input type ="password">
-        <br>
-        <br>
-         <label>Gender</label><br>
-         <input type="radio" id="html" name="abc" value="html">
-         <label>Male</label><br>
-         <input type="radio" id="html" name="abc" value="html">
-         <label>Female</label><br>
-         <br>
-            <label>User select city</label>
-        <select>
-            <option>Select your city</option>
-            <option>Varanasi</option>
-            <option>Jaunpur</option>
-            <option>Saharanpur</option>
-            <option>Delhi</option>
-            <option>Mumbai</option>
-            <option>Mathura</option>
-            <option>Vrindavan</option>
-        </select>
-         <br>
-        <br> 
-         <button>Seat Book</button>    
-         cict platform,version controlling system
-         client server architecture
+    <div class="topnav">
+        <img class="logo" src="bus.jpg" alt="Logo">
+        <div class="title">BUS SEAT BOOK</div>
+    </div>
+    <center>WELCOME TO BUS BOOKING SYSTEM</center>
+    <br>
+    <div>USER DETAIL</div>
+    <img class="main-image" src="bus.jpg" alt="Image">
+    <br>
+    <label>User Name</label>
+    <input type ="text">
+    <br><br>
+    <label>User Password</label>
+    <input type ="password">
+    <br><br>
+    <label>Gender</label><br>
+    <input type="radio" name="gender" value="Male">
+    <label>Male</label><br>
+    <input type="radio" name="gender" value="Female">
+    <label>Female</label><br><br>
+    <label>User select city</label>
+    <select>
+        <option>Select your city</option>
+        <option>Varanasi</option>
+        <option>Jaunpur</option>
+        <option>Saharanpur</option>
+        <option>Delhi</option>
+        <option>Mumbai</option>
+        <option>Mathura</option>
+        <option>Vrindavan</option>
+    </select>
+    <br><br>
+    <button onclick="window.location.href='assignment2a.html'">Seat Book</button>    
 </body>
 </html>
