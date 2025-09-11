@@ -1,0 +1,96 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        #adi{
+            border:5px solid blue;
+            height:300px;
+            width:300px;
+            background-color:beige;
+            padding:15px;
+            text-align:center;
+        }
+        .logo{
+            width:50px;  
+            height:50px;
+            border-radius:50%; 
+        }
+        button{
+            padding:10px 20px;
+            margin:5px;
+            font-size:18px;
+        }
+        #aaa{
+            font-size:30px;
+            font-weight:bold;
+            margin:15px 0;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="adi">
+            <img class="logo" src="counter1.jpg" alt="Logo">
+            <h1>COUNTER APP</h1>
+            <p id="aaa">0</p>
+            <button onclick="increment()">+</button>
+            <button onclick="decrement()">-</button>
+        </div>  
+    </center>
+    <script>
+        var count=0;  
+        function increment() {
+            if(count<10){
+                count++;
+                document.getElementById("aaa").innerHTML = count;
+            } 
+            else{
+                alert("Maximum value is reached!");
+            }
+        }
+        function decrement(){
+            if(count>0){
+                count--;
+                document.getElementById("aaa").innerHTML = count;
+        }
+    }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Image Example</title>
+    <style>
+        .logo{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        button{
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img id="logoImage" class="logo" src="counter1.jpg" alt="Logo">
+        <br>
+        <button onclick="hideImage()">Hide Image</button>
+    </center>
+
+    <script>
+        function hideImage() {
+            document.getElementById("logoImage").style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
