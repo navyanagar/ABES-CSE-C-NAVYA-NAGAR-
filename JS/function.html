@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        #adi{
+        border: 5px solid blue;
+        height:200px;
+        width:200px;
+        background-color: beige;
+        }
+    </style>
 </head>
 <body>
+    <div id ="adi">
+        <button onClick="ad()">Click</button>
+        <p id="aaa"></p>
+    </div>
     <script>
-        function abes()
-            {
-             document.write("We are student of ABESEC");
-            }
-            abes();
+        // function abes()
+        //     {
+        //      document.write("We are student of ABESEC<br>");
+        //     }
+        //     abes();
+        //     function addition()
+        //     {
+        //         var a =10;
+        //         var b=20;
+        //         var c= a+b;
+        //         document.write("Addition of a and b is"+c+ "<br>");
+        //     }
+        //     addition();
+        //      function subtraction()
+        //     {
+        //         var a =10;
+        //         var b=20;
+        //         var c= a-b;
+        //         document.write("Subtraction of a and b is"+c+ "<br>");
+        //     }
+        //     subtraction();
+
+        function ad()
+        {
+            document.getElementById("aaa").innerHTML="<h1>Hello</h1>";
+        }
+            
     </script>
 </body>
 </html>
