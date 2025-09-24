@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Branch Cards</title>
+  <style>
+    body {
+      background: #f4f6f8;
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      display: flex;
+      gap: 30px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 18px 20px;
+      min-width: 250px;
+    }
+    h3 {
+      margin-top: 0;
+      font-size: 1.1em;
+      color: #37577f;
+      text-align: center;
+    }
+    .student {
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h3>Students with Same Branch (IT)</h3>
+    <div id="sameBranchCard"></div>
+  </div>
+  <div class="card">
+    <h3>Students with Different Branch</h3>
+    <div id="diffBranchCard"></div>
+  </div>
+
+  <script>
+    const students = [
+      { StudentName: "Nischay Malhan", StudentRollNumber: "14", StudentBranch: "CSE" },
+      { StudentName: "Rohit Saraf", StudentRollNumber: "11", StudentBranch: "CS" },
+      { StudentName: "Jennifer Winget", StudentRollNumber: "19", StudentBranch: "IT" },
+      { StudentName: "Shraddha Kapoor", StudentRollNumber: "3", StudentBranch: "IT" },
+      { StudentName: "Shivam Chaubey", StudentRollNumber: "15", StudentBranch: "IT" }
+    ];
+
+    let sameBranchHtml = "";
+    let diffBranchHtml = "";
+
+    for (let i = 0; i < students.length; i++) {
+      if (students[i].StudentBranch === "IT") {
+        sameBranchHtml += '<div class="student">' + students[i].StudentName + ' (' + students[i].StudentBranch + ')</div>';
+      } else {
+        diffBranchHtml += '<div class="student">' + students[i].StudentName + ' (' + students[i].StudentBranch + ')</div>';
+      }
+    }
+
+    document.getElementById("sameBranchCard").innerHTML = sameBranchHtml;
+    document.getElementById("diffBranchCard").innerHTML = diffBranchHtml;
+  </script>
+</body>
+</html>
