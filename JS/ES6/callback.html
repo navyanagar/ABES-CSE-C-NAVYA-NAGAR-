@@ -4,13 +4,34 @@
 </head>
 <body>
 <script>
-function sum(a,b){
-console.log(a+b);
+//callbackhell
+function getData(dataid,getNextData)
+{
+setTimeout(()=>{
+console.log("data",dataid);
+if(getNextData){
+getNextData();
 }
-function call(a,b,sumcallback){
-sumcallback(a,b);
+},2000);
 }
-call(10,20,sum);
+getData(1,()=>{
+    getData(2,()=>{
+        getData(3,()=>{
+          getData(4);
+        });
+    });
+});
+
+
+
+//callback
+// function sum(a,b){
+// console.log(a+b);
+// }
+// function call(a,b,sumcallback){
+// sumcallback(a,b);
+// }
+// call(10,20,sum);
 </script>
 </body>
 </html>
