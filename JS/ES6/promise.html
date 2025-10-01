@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- to escapefrom nested call back -->
+</head>
+<body>
+   <!-- promise(resolve,reject) 
+   {
+   }
+   m1.then() condition is true
+   m1.catch()condition is false
+   advanced version of nested call back -->
+   <script>
+    const mypromise=new Promise((resolve,reject)=>{
+         const password="suggu@123";
+         if(password.length>8){
+            resolve("password length is ok");
+         }
+         else{
+            reject("password length is shorted")
+         }
+    })
+    mypromise.then((msg)=>{
+        console.log(msg);
+    })
+    mypromise.catch((err)=>{
+        console.log(err);
+    })
+   </script>
+</body>
+</html>
