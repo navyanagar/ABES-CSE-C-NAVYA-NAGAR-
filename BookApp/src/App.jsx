@@ -1,11 +1,11 @@
 import React from 'react'
 import Book from './components/Book'
 import './App.css'
-import './navbar.css'
+import Navbar from './components/navbar'
 function App() {
   return (
     <div>
-      <navbar/>
+      <Navbar/>
     <div id = "adi">
       <Book title ="Physics" price="800" img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp1Q-pg2XPjL4xconpTzAZ1doKj83xhZfMKA&s'/>
       <Book title ="Chemistry" price="800" img='https://media.istockphoto.com/id/1000158336/photo/chemistry-education-concept-open-books-with-text-chemistry-and-formulas-and-textbooks-flasks.jpg?s=612x612&w=0&k=20&c=X7Gg8LWV6_WXiox2Wc9P2NpxH1ypJEEP6XXeYJTH4IQ='/>
