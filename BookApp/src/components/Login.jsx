@@ -4,11 +4,11 @@ function Login() {
   return (
     <div>
       <h2>Login Page</h2>
-      {/* <form>
+      <form>
         <input type="email" placeholder="Enter Email" /><br />
         <input type="password" placeholder="Enter Password" /><br />
         <button>Login</button>
-      </form> */}
+      </form>
     </div>
   )
 }
