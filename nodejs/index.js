@@ -31,4 +31,20 @@
 // if there is no page, it is null route and slash(/) is entry route
 
 
-        
+// ./ =>current directory
+// Sync
+// const fs=require('fs');
+// // fs.writeFileSync("./cse-c.txt","hi we are coder in node")
+// const result=fs.readFileSync("./cse-c.txt","utf-8");
+// console.log(result);
+
+
+//Async
+const fs = require('fs');
+fs.readFile("./cse-c.txt", "utf-8", (err, result) => {
+    if (err) {
+        console.log(err);
+        return;
+    }
+    console.log(result);
+});
