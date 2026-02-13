@@ -92,5 +92,8 @@
 // });
 
 // Delete
-const fs=require('fs');
-fs.unlinkSync("./a.txt");
+// const fs=require('fs');
+// fs.unlinkSync("./a.txt");
+
+// const fs=require('fs');
+// fs.unlink("./a.txt");
