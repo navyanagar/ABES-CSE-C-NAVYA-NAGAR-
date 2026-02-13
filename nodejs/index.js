@@ -48,3 +48,30 @@
 //     }
 //     console.log(result);
 // });
+
+// const fs=require('fs');
+// // fs.writeFile("./a.txt","abes college is", () => { });
+// fs.readFile("./a.txt","utf-8", (err,result) => { 
+// if(err){
+//     console.log("error",err)
+// }
+// else{
+//     console.log(result);
+// }
+// })
+
+// const fs=require('fs');
+// // fs.writeFile("./a.txt","abes college is", () => { });
+// fs.writeFile("./c.txt","utf=8","hello everyone", (err,result) => { 
+// if(err){
+//     console.log("error",err)
+// }
+// else{
+//     console.log(result);
+// }
+// }) 
+// //use if wala in interview
+
+//Append
+const fs = require('fs');
+fs.appendFileSync("./a.txt", ` good`)
