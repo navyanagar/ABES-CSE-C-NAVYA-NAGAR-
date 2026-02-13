@@ -73,5 +73,20 @@
 // //use if wala in interview
 
 //Append
-const fs = require('fs');
-fs.appendFileSync("./a.txt", ` good`)
+// const fs = require('fs');
+// fs.appendFileSync("./a.txt", ` good`);
+
+// const fs = require('fs');
+// fs.cpSync("./a.txt","./b.txt");
+
+// const fs = require('fs');
+// fs.cp("./a.txt","./b.txt");
+
+// const fs = require('fs');
+// fs.cp("./a.txt", "./b.txt", (err) => {
+//     if (err) {
+//         console.log("Error:", err);
+//     } else {
+//         console.log("File copied successfully");
+//     }
+// });
