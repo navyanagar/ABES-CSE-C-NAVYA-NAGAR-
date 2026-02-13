@@ -90,3 +90,7 @@
 //         console.log("File copied successfully");
 //     }
 // });
+
+// Delete
+const fs=require('fs');
+fs.unlinkSync("./a.txt");
