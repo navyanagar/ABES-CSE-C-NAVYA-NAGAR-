@@ -5,7 +5,7 @@ function App() {
   const [result, setResult] = useState("Work with OS");
 
   const fetchData = async (endpoint) => {
-    const res = await fetch(`http://localhost:5000/${endpoint}`);
+    const res = await fetch(`http://localhost:8000/${endpoint}`);
     const data = await res.json();
     setResult(JSON.stringify(data, null, 2));
   };
